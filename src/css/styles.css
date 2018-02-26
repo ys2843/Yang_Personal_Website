@@ -1,0 +1,24 @@
+.ItemPaper {
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-bottom: 20px;
+    padding-right: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.EduItemContainer {
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+
+}
+
+.DetailTable {
+    border: 5px;
+    border-bottom-color: black;
+}
