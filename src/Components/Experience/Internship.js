@@ -16,15 +16,19 @@ const hDetail = [
     "Worked on building and testing IMS on both server and client side with team. Monitored the working condition and data flow of client’s equipment"
 ]
 
+const tech = [
+    ["React Native", "Mobile App", "Frontend"],
+    ["Assistant"]
+]
 const Internship = () => {
     return (
         <div>
             <AppBarItem title="Internship"/>
             <Items logo={stackLogo} time="Jan 2018 - Present" topic="Frontend Developer" title="Main Project: MoneyWall"
-                   position="Intern"
+                   position="Intern" tech={tech[0]}
                    location="Stack Technology, Inc." detail={sDetail}/>
             <Items logo={huaweiLogo} time="Feb 2016 - Mar 2016" topic="Project Assistant"
-                   title="Project Department: IMS(IP Multimedia Subsystem)"
+                   title="Project Department: IMS(IP Multimedia Subsystem)" tech={tech[1]}
                    location="Huawei Corporation" detail={hDetail}/>
         </div>
     );
