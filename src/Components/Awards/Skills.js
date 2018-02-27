@@ -16,39 +16,12 @@ const Skills = () => {
             <GridList style={{width: 200}} cols={1}>
                 <GridListTile>
                     <img src={Skill} alt="skills"/>
-                    <GridListTileBar title="专业技能"/>
+                    <GridListTileBar title="Frontend"/>
                 </GridListTile>
             </GridList>
             <div style={{paddingLeft: 10, flexGrow: 1}}>
                 <List>
-                    <ListItem style={{paddingBottom: 5}}>
-                        <ListItemAvatar>
-                            <Avatar alt="skill" src={ArcMapLogo}/>
-                        </ListItemAvatar>
-                        <ListItemText secondary="地球信息系统 ArcMAP"/>
-                        <Checkbox checked={true}/>
-                    </ListItem>
-                    <ListItem style={{paddingBottom: 5}}>
-                        <ListItemAvatar>
-                            <Avatar alt="skill" src={AutoCadLogo}/>
-                        </ListItemAvatar>
-                        <ListItemText secondary="制图 AutoCad"/>
-                        <Checkbox checked={true}/>
-                    </ListItem>
-                    <ListItem style={{paddingBottom: 5}}>
-                        <ListItemAvatar>
-                            <Avatar alt="skill" src={excelLogo}/>
-                        </ListItemAvatar>
-                        <ListItemText secondary="Excel 数据分析"/>
-                        <Checkbox checked={true}/>
-                    </ListItem>
-                    <ListItem style={{paddingBottom: 5}}>
-                        <ListItemAvatar>
-                            <Avatar alt="skill" src={RLogo}/>
-                        </ListItemAvatar>
-                        <ListItemText secondary="R语言"/>
-                        <Checkbox checked={true}/>
-                    </ListItem>
+
                 </List>
 
             </div>

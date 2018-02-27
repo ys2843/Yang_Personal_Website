@@ -109,7 +109,7 @@ class ResponsiveDrawer extends React.Component {
                                 <MenuIcon/>
                             </IconButton>
                             <Typography variant="title" color="inherit" noWrap>
-                                王 晶 的主页
+                                Yang's Website
                             </Typography>
                         </Toolbar>
                     </AppBar>

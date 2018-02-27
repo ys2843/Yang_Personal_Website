@@ -7,10 +7,10 @@ import AppBarItem from '../AppBarItem';
 const PersonalInfo = () => {
     return (
         <div className='ItemContainer'>
-            <AppBarItem title="个人信息"/>
+            <AppBarItem title="Personal Information"/>
             <Paper className='ItemPaper'>
                 <Typography variant="title" color="inherit" noWrap>
-                    你好，我叫王晶
+                    Hello, I am Yang.
                 </Typography>
             </Paper>
         </div>

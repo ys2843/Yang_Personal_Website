@@ -17,27 +17,27 @@ const MailFolderListItems = ({mobileOpen}) => {
             </div>
             <div>
                 <Link to="/" style={{textDecoration: 'none'}}>
-                    <ListButton title='个人信息' handleDrawerToggle={mobileOpen}>
+                    <ListButton title='About' handleDrawerToggle={mobileOpen}>
                         <PersonalInfoIcon/>
                     </ListButton>
                 </Link>
                 <Link to="/education" style={{textDecoration: 'none'}}>
-                    <ListButton title='教育背景' handleDrawerToggle={mobileOpen}>
+                    <ListButton title='Education' handleDrawerToggle={mobileOpen}>
                         <SchoolIcon/>
                     </ListButton>
                 </Link>
                 <Link to="/experience" style={{textDecoration: 'none'}}>
-                    <ListButton title='学术经历' handleDrawerToggle={mobileOpen}>
+                    <ListButton title='Experience' handleDrawerToggle={mobileOpen}>
                         <ProjectIcon/>
                     </ListButton>
                 </Link>
                 <Link to="/awards" style={{textDecoration: 'none'}}>
-                    <ListButton title='技能荣誉' handleDrawerToggle={mobileOpen}>
+                    <ListButton title='Skills' handleDrawerToggle={mobileOpen}>
                         <AwardsIcon/>
                     </ListButton>
                 </Link>
                 <Link to="/hobbies" style={{textDecoration: 'none'}}>
-                    <ListButton title='兴趣爱好' handleDrawerToggle={mobileOpen}>
+                    <ListButton title='Hobbies' handleDrawerToggle={mobileOpen}>
                         <HobbiesIcon/>
                     </ListButton>
                 </Link>
