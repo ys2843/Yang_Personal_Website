@@ -3,12 +3,11 @@ import Items from './ExpItems'
 import stackLogo from '../../img/stackLogo.png';
 import '../../css/styles.css'
 import AppBarItem from '../AppBarItem'
-import InternLogo from '../../img/internLogo.jpeg'
 import huaweiLogo from '../../img/huaweiLogo.png';
 
 const sDetail = [
     "Worked with UI designer to develop front end Views in React Native",
-    "Contributed to develop children components and plot investment charts using Victory library"
+    "•\tContributed to plot investment charts using Victory library, user authentication using Asyncstorage and JWT (Jason Web Token)"
 ]
 
 const hDetail = [

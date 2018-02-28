@@ -47,15 +47,20 @@ const Projects = () => {
         <div>
             <AppBarItem title="Projects"/>
             <Item logo={nyuLogo} time="Dec 2017 - Present" topic="Web Developer" location="NYU"
+                  projectUrl="https://github.com/ys2843/SkincareWebProject"
                   title="Skincare Ingredients Search Website based on Web Crawler" detail={Detail[0]} tech={tech1[0]}/>
             <Item logo={nyuLogo} time="Sep 2017 - November 2017" topic="Machine Learning Research" location="NYU"
-                  title="Prediction and Analysis of Crime Occurrence Based on Local Demographic and Economic Data"
+                  projectUrl="https://github.com/godwinxunwang/el9123-project"
+                  title="Prediction of Crime Occurrence Based on Local Demographic and Economic Data"
                   detail={Detail[1]} tech={tech1[1]}/>
             <Item logo={nyuLogo} time="Oct 2017 - November 2017" topic="Python Developer" location="NYU"
+                  projectUrl="https://github.com/ys2843/Selfie-Camera-with-Speech-Recognition"
                   title="Selfie Camera for Laptop with Speech Recognition" detail={Detail[2]} tech={tech1[2]}/>
             <Item logo={nyuLogo} time="Apr 2017 - May 2017" topic="Web Developer" location="NYU"
-                  title="Crowdfunding Website " detail={Detail[3]} tech={tech1[3]}/>
+                  title="Crowdfunding Website " detail={Detail[3]} tech={tech1[3]}
+                  projectUrl="https://github.com/ooobread/NYU-Code"/>
             <Item logo={nyuLogo} time="Feb 2017 - May 2017" topic="Big Data Analysis" location="NYU"
+                  projectUrl="https://github.com/ys2843/NYU_Million_Song_Dataset_Analysis"
                   title="Analysis on Million Songs Datasets" detail={Detail[4]} tech={tech1[4]}/>
             <Item logo={buptLogo} time="Nov 2015 - Apr 2016" topic="Java Developer" location="BUPT"
                   title="An Authoring Tool for Building Customized Study Guides" detail={Detail[5]} tech={tech1[5]}/>

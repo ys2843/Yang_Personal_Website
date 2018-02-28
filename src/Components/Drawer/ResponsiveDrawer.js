@@ -109,7 +109,7 @@ class ResponsiveDrawer extends React.Component {
                                 <MenuIcon/>
                             </IconButton>
                             <Typography variant="title" color="inherit" noWrap>
-                                Yang's Website
+                                Yang's Website | Objective: Software Development Engineer | Est Grad Date: May 2018
                             </Typography>
                         </Toolbar>
                     </AppBar>

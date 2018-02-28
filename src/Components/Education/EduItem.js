@@ -7,7 +7,7 @@ import ExpansionPanel, {
     ExpansionPanelDetails,
 } from 'material-ui/ExpansionPanel';
 import ExpandMoreIcon from 'material-ui-icons/ExpandMore';
-import List, {ListItem, ListItemIcon, ListItemText} from 'material-ui/List';
+import List, {ListItem, ListItemText} from 'material-ui/List';
 
 const EduItem = ({Logo, url, name, major, degree, time, award, optionalText, otheraward}) => {
 
@@ -33,7 +33,7 @@ const EduItem = ({Logo, url, name, major, degree, time, award, optionalText, oth
                 </div>
                 <ExpansionPanel>
                     <ExpansionPanelSummary expandIcon={<ExpandMoreIcon/>}>
-                        <Tooltip title="Show other awards" placement="right">
+                        <Tooltip title="Show all awards" placement="right">
                             <Typography variant="body1" color="inherit" gutterBottom={true}>Awards: {award}</Typography>
                         </Tooltip>
                     </ExpansionPanelSummary>
@@ -41,8 +41,8 @@ const EduItem = ({Logo, url, name, major, degree, time, award, optionalText, oth
                         <List>
                             {
                                 otheraward && otheraward.map((item) => (
-                                    <ListItem>
-                                        <ListItemText key={item} secondary={item}/>
+                                    <ListItem key={item}>
+                                        <ListItemText secondary={item}/>
                                     </ListItem>)
                                 )
                             }

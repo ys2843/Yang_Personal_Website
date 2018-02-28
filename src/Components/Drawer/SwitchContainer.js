@@ -1,7 +1,7 @@
 import React from 'react';
 import Education from "../Education/Education";
 import Experience from '../Experience/Experience'
-import Awards from "../Awards/Awards";
+import Skills from "../Awards/Skills";
 import Hobbies from "../Hobbies/Hobbies";
 import PersonalInfo from "../PersonalInfo/PersonalInfo";
 import {
@@ -17,7 +17,7 @@ const SwitchContainer = () => {
                 <Route path="/education" component={Education}/>
                 <Route path="/experience" component={Experience}/>
                 <Route path="/hobbies" component={Hobbies}/>
-                <Route path="/awards" component={Awards}/>
+                <Route path="/skills" component={Skills}/>
             </Switch>
         </div>
     )

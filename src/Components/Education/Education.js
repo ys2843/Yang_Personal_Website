@@ -9,10 +9,10 @@ import Divider from 'material-ui/Divider';
 
 const Education = () => {
     const Bupt = [
-        "Sport Star of Class - 2014",
-        "2nd Prize of University Sport Meeting(Rope Skipping | Break Record) - 2013",
-        "1st Prize of English Drama Competition - 2013",
-        "3rd Prize of English Film Dubbing Competition - 2013"
+        "1st Prize of Winter Sport Meeting(Rope Skipping) - 2013.12",
+        "3st Prize of BUPT English Drama Competition - 2013.11",
+        "Title of recreational and sports Activities Enthusiast - 2013.10",
+        "2nd Prize of University Sport Meeting(Rope Skipping | Break Record) - 2013.4"
     ]
     const Nyu = [
         "Certificate of Professional Mentorship Program - 2017"

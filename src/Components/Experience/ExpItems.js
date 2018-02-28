@@ -3,9 +3,10 @@ import Typography from 'material-ui/Typography';
 import Table, {TableBody, TableRow, TableCell} from 'material-ui/Table';
 import '../../css/styles.css';
 import Divider from 'material-ui/Divider';
+import Tooltip from 'material-ui/Tooltip';
 import Chip from 'material-ui/Chip';
 
-const ExpItems = ({logo, topic, time, title, position, location, detail, tech}) => {
+const ExpItems = ({logo, topic, time, title, position, location, detail, tech, projectUrl}) => {
     return (
         <div className='ItemPaper'>
             <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}>
@@ -18,12 +19,22 @@ const ExpItems = ({logo, topic, time, title, position, location, detail, tech}) 
                 <Typography variant="title" gutterBottom={true}>
                     {topic} - {location}
                 </Typography>
-                <Typography variant="subheading">
-                    {title}
-                </Typography>
+                {
+                    projectUrl ? <Tooltip title="View on Github" placement="left">
+                            <a href={projectUrl} target="_blank" style={{textDecoration: 'none'}}>
+                                <Typography variant="subheading">
+                                    Main Project: {title}
+                                </Typography>
+                            </a>
+                        </Tooltip> :
+                        <Typography variant="subheading" gutterBottom={true}>
+                            Main Project: {title}
+                        </Typography>
+                }
+
                 {
                     tech && tech.map((item) => (
-                            <Chip label={item} style={{
+                            <Chip label={item} key={item} style={{
                                 borderRadius: 3,
                                 margin: 5,
                                 marginBottom: 10,

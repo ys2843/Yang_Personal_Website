@@ -31,7 +31,7 @@ const MailFolderListItems = ({mobileOpen}) => {
                         <ProjectIcon/>
                     </ListButton>
                 </Link>
-                <Link to="/awards" style={{textDecoration: 'none'}}>
+                <Link to="/skills" style={{textDecoration: 'none'}}>
                     <ListButton title='Skills' handleDrawerToggle={mobileOpen}>
                         <AwardsIcon/>
                     </ListButton>
