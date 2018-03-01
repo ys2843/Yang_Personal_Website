@@ -3,6 +3,8 @@ import Education from "../Education/Education";
 import Experience from '../Experience/Experience'
 import Skills from "../Awards/Skills";
 import Hobbies from "../Hobbies/Hobbies";
+import weChat from '../wechat';
+
 import PersonalInfo from "../PersonalInfo/PersonalInfo";
 import {
     Route,
@@ -18,6 +20,7 @@ const SwitchContainer = () => {
                 <Route path="/experience" component={Experience}/>
                 <Route path="/hobbies" component={Hobbies}/>
                 <Route path="/skills" component={Skills}/>
+                <Route path="/wechat" component={weChat}/>
             </Switch>
         </div>
     )

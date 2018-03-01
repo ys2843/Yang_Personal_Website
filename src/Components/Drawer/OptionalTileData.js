@@ -35,7 +35,7 @@ const OptionalTileData = ({mobileOpen}) => {
                         </svg>
                     </ListButton>
                 </a>
-                <Link to="/" style={{textDecoration: 'none'}}>
+                <Link to="/wechat" style={{textDecoration: 'none'}}>
                     <ListButton title='WeChat' handleDrawerToggle={mobileOpen}>
                         <svg style={{width: 24, height: 24}} viewBox="0 0 24 24">
                             <path fill="#757575"

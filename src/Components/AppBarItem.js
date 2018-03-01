@@ -8,14 +8,14 @@ const AppBarItem = ({title}) => {
     return (
         <AppBar style={{
             width: '100%',
-            backgroundColor: '#77BA9B',
+            backgroundColor: '#4682B4',
             height: 35,
             justifyContent: 'center',
             position: "sticky",
             top: 40
         }}>
             <Toolbar>
-                <Typography variant="subheading" color="inherit">
+                <Typography variant="body2" color="inherit">
                     {title}
                 </Typography>
             </Toolbar>
