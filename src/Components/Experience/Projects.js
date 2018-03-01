@@ -45,7 +45,9 @@ const Projects = () => {
     ]
     return (
         <div>
-            <AppBarItem title="Projects"/>
+            {
+                window.innerWidth <= 500 ? <AppBarItem title="Internship & Projects"/> : <AppBarItem title="Projects"/>
+            }
             <Item logo={nyuLogo} time="Dec 2017 - Present" topic="Web Developer" location="NYU"
                   projectUrl="https://github.com/ys2843/SkincareWebProject"
                   title="Skincare Ingredients Search Website based on Web Crawler" detail={Detail[0]} tech={tech1[0]}/>

@@ -16,13 +16,14 @@ const style = {
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    paddingBottom: 10
+    paddingBottom: 10,
+    paddingTop:10
 }
 
 const greeting = [
     "I am Yang Shi. I created this place for I want you to know more about me.",
     "I am a 2nd year graduate student in New York University, major in Computer Engineering.",
-    "I finished my bachelor degree in May 2016 from Beijing University of Posts and Telecommunications, major in Telecommunication Engineering with Management.",
+    "I have completed my bachelor degree in May 2016 from Beijing University of Posts and Telecommunications, major in Telecommunication Engineering with Management.",
     "I have worked in large company like Huawei Corporation, and in start-up company like Stack."
 ]
 

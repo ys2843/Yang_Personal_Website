@@ -20,7 +20,6 @@ const Education = () => {
     return (
         <Paper>
             <AppBarItem title="Education"/>
-
             <EduItem Logo={nyuLogo} url="http://engineering.nyu.edu/" name="New York University"
                      major="Computer Engineering" degree="M.Sci"
                      time="Aug 2016 - Present" award="Grad School of Engineering Scholarship"

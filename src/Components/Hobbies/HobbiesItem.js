@@ -1,7 +1,6 @@
 import React from 'react';
 import '../../css/styles.css';
 import Typography from 'material-ui/Typography';
-import Paper from 'material-ui/Paper';
 
 const HobbiesItem = ({logo, title, description, url, urlTitle}) => {
 

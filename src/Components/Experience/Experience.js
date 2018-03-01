@@ -6,8 +6,8 @@ import Projects from './Projects';
 const Experience = () => {
     return (
         <Paper>
-            <Projects/>
             <Internship/>
+            <Projects/>
         </Paper>
     );
 }

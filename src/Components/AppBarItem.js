@@ -11,6 +11,7 @@ const AppBarItem = ({title}) => {
             backgroundColor: '#4682B4',
             height: 35,
             justifyContent: 'center',
+            position: '-webkit-sticky',
             position: "sticky",
             top: 40
         }}>

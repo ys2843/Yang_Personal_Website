@@ -7,7 +7,7 @@ import huaweiLogo from '../../img/huaweiLogo.png';
 
 const sDetail = [
     "Worked with UI designer to develop front end Views in React Native",
-    "•\tContributed to plot investment charts using Victory library, user authentication using Asyncstorage and JWT (Jason Web Token)"
+    "Contributed to plot investment charts using Victory library, user authentication using Asyncstorage and JWT (Jason Web Token)"
 ]
 
 const hDetail = [
@@ -23,11 +23,11 @@ const Internship = () => {
     return (
         <div>
             <AppBarItem title="Internship"/>
-            <Items logo={stackLogo} time="Jan 2018 - Present" topic="Frontend Developer" title="Main Project: MoneyWall"
+            <Items logo={stackLogo} time="Jan 2018 - Present" topic="Frontend Developer" title="MoneyWall"
                    position="Intern" tech={tech[0]}
                    location="Stack Technology, Inc." detail={sDetail}/>
             <Items logo={huaweiLogo} time="Feb 2016 - Mar 2016" topic="Project Assistant"
-                   title="Project Department: IMS(IP Multimedia Subsystem)" tech={tech[1]}
+                   title="IMS (IP Multimedia Subsystem)" tech={tech[1]}
                    location="Huawei Corporation" detail={hDetail}/>
         </div>
     );
