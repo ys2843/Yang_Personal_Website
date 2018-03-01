@@ -16,18 +16,18 @@ const ExpItems = ({logo, topic, time, title, position, location, detail, tech, p
                 </Typography>
             </div>
             <div style={{width: '100%', paddingLeft: 10}}>
-                <Typography variant="title" gutterBottom={true}>
+                <Typography variant="subheading" color="primary" gutterBottom={true}>
                     {topic} - {location}
                 </Typography>
                 {
                     projectUrl ? <Tooltip title="View on Github" placement="left">
                             <a href={projectUrl} target="_blank" style={{textDecoration: 'none'}}>
-                                <Typography variant="subheading">
+                                <Typography variant="body2">
                                     Main Project: {title}
                                 </Typography>
                             </a>
                         </Tooltip> :
-                        <Typography variant="subheading" gutterBottom={true}>
+                        <Typography variant="body1" gutterBottom={true}>
                             Main Project: {title}
                         </Typography>
                 }

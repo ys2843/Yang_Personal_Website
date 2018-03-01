@@ -6,6 +6,7 @@ import photo from '../../img/self.jpg';
 import Avatar from 'material-ui/Avatar';
 import background from '../../img/Sky.jpg';
 import ReactRevealText from 'react-reveal-text/lib/ReactRevealText';
+import selfphoto from '../../img/selfpic.jpg';
 
 const style = {
     backgroundImage: `url(${background})`,
@@ -48,31 +49,40 @@ class PersonalInfo extends Component {
 
     render() {
         return (
-            <Paper style={{height: '100%'}}>
+            <div>
                 <div style={style}>
                     <Avatar alt="Yang" style={{width: '15%', height: '15%'}}>
                         <img src={photo} alt='yang' style={{width: '100%'}}/>
                     </Avatar>
                 </div>
-                <div style={{padding: 20}}>
-                    <Typography variant='title' align='center' gutterBottom={true}>
-                        <ReactRevealText show={this.state.show}>
-                            WELCOME TO MY WEBSITE!
-                        </ReactRevealText>
-                    </Typography>
-                    <Typography variant='title' gutterBottom={true}>
-                        Hello,
-                    </Typography>
-                    {
-                        greeting.map((item) => {
-                                return (
-                                    <Typography key={item} variant='body1' gutterBottom={true}>
-                                        {item}
-                                    </Typography>
-                                )
-                            }
-                        )
-                    }
+                <Paper style={{marginBottom: 5, marginTop: 5}}>
+                    <div style={{padding: 20}}>
+                        <Typography variant='title' align='center' gutterBottom={true}>
+                            <ReactRevealText show={this.state.show}>
+                                WELCOME TO MY WEBSITE!
+                            </ReactRevealText>
+                        </Typography>
+                        <div style={{display: 'flex', flexDirection: 'row', paddingBottom: 20}}>
+                            <img src={selfphoto} alt="myself"/>
+                            <div style={{paddingLeft: 10, paddingTop: 10}}>
+                                <Typography variant='title' gutterBottom={true}>
+                                    Hello,
+                                </Typography>
+                                {
+                                    greeting.map((item) => {
+                                            return (
+                                                <Typography key={item} variant='body1' gutterBottom={true}>
+                                                    {item}
+                                                </Typography>
+                                            )
+                                        }
+                                    )
+                                }
+                            </div>
+                        </div>
+                    </div>
+                </Paper>
+                <Paper style={{padding: 20}}>
                     <Typography variant='title' gutterBottom={true}>
                         Why hire me?
                     </Typography>
@@ -86,8 +96,8 @@ class PersonalInfo extends Component {
                             }
                         )
                     }
-                </div>
-            </Paper>
+                </Paper>
+            </div>
         )
     }
 }
