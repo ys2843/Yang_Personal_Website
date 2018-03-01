@@ -30,7 +30,7 @@ const styles = theme => ({
     appBar: {
         position: 'fixed',
         marginLeft: drawerWidth,
-        backgroundColor: '#8C4FCC',
+        backgroundColor: '#9575cd',
         justifyContent: 'center',
         height: 40,
         [theme.breakpoints.up('md')]: {
@@ -108,9 +108,16 @@ class ResponsiveDrawer extends React.Component {
                             >
                                 <MenuIcon/>
                             </IconButton>
-                            <Typography variant="subheading" color="inherit" noWrap>
-                                Yang's Website | Objective: Software Development Engineer | Est Grad Date: May 2018
-                            </Typography>
+                            {
+                                window.innerWidth <= 500 ?
+                                    <Typography variant="subheading" color="inherit" noWrap>
+                                        Yang's Website
+                                    </Typography> :
+                                    <Typography variant="subheading" color="inherit" noWrap>
+                                        Yang's Website | Objective: Software Development Engineer | Est Grad Date: May
+                                        2018
+                                    </Typography>
+                            }
                         </Toolbar>
                     </AppBar>
                     <Hidden mdUp>

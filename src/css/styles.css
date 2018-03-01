@@ -2,7 +2,15 @@
     padding: 20px 10px 20px 10px;
     margin-bottom: 10px;
     display: flex;
-    flex-direction: row;
+}
+
+.ItemPaperMobile {
+    padding: 20px 10px 20px 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 }
 
 .EduItemContainer {

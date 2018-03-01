@@ -10,6 +10,7 @@ import selfphoto from '../../img/selfpic.jpg';
 
 const style = {
     backgroundImage: `url(${background})`,
+    backgroundSize: '100%',
     //backgroundColor: "#4682B4",
     display: 'flex',
     justifyContent: 'center',
@@ -48,57 +49,102 @@ class PersonalInfo extends Component {
     }
 
     render() {
-        return (
-            <div>
-                <div style={style}>
-                    <Avatar alt="Yang" style={{width: '15%', height: '15%'}}>
-                        <img src={photo} alt='yang' style={{width: '100%'}}/>
-                    </Avatar>
-                </div>
-                <Paper style={{marginBottom: 5, marginTop: 5}}>
-                    <div style={{padding: 20}}>
-                        <Typography variant='title' align='center' gutterBottom={true}>
+        const isMobile = window.innerWidth <= 500;
+        if (isMobile) {
+            return (
+                <div>
+                    <div style={style}>
+                        <Avatar alt="Yang" style={{width: '15%', height: '15%'}}>
+                            <img src={photo} alt='yang' style={{width: '100%'}}/>
+                        </Avatar>
+                    </div>
+                    <Paper style={{marginBottom: 1, padding: 20}}>
+                        <Typography variant='title' gutterBottom={true}>
                             <ReactRevealText show={this.state.show}>
-                                WELCOME TO MY WEBSITE!
+                                Welcome to my website!
                             </ReactRevealText>
                         </Typography>
-                        <div style={{display: 'flex', flexDirection: 'row', paddingBottom: 20}}>
-                            <img src={selfphoto} alt="myself"/>
-                            <div style={{paddingLeft: 10, paddingTop: 10}}>
-                                <Typography variant='title' gutterBottom={true}>
-                                    Hello,
-                                </Typography>
-                                {
-                                    greeting.map((item) => {
-                                            return (
-                                                <Typography key={item} variant='body1' gutterBottom={true}>
-                                                    {item}
-                                                </Typography>
-                                            )
-                                        }
+                        {
+                            greeting.map((item) => {
+                                    return (
+                                        <Typography key={item} variant='body1' gutterBottom={true}>
+                                            {item}
+                                        </Typography>
                                     )
                                 }
+                            )
+                        }
+                    </Paper>
+                    <Paper style={{padding: 20}}>
+                        <Typography variant='title' gutterBottom={true}>
+                            Why hire me?
+                        </Typography>
+                        {
+                            hireMe.map((item) => {
+                                    return (
+                                        <Typography key={item} variant='body1' gutterBottom={true}>
+                                            {item}
+                                        </Typography>
+                                    )
+                                }
+                            )
+                        }
+                    </Paper>
+                </div>
+            )
+        } else {
+            return (
+                <div>
+                    <div style={style}>
+                        <Avatar alt="Yang" style={{width: '15%', height: '15%'}}>
+                            <img src={photo} alt='yang' style={{width: '100%'}}/>
+                        </Avatar>
+                    </div>
+                    <Paper style={{marginBottom: 5, marginTop: 5}}>
+                        <div style={{padding: 20}}>
+                            <Typography variant='title' align='center' gutterBottom={true}>
+                                <ReactRevealText show={this.state.show}>
+                                    WELCOME TO MY WEBSITE!
+                                </ReactRevealText>
+                            </Typography>
+                            <div style={{display: 'flex', flexDirection: 'row', paddingBottom: 20}}>
+                                <img src={selfphoto} alt="myself" style={{maxHeight: '100%'}}/>
+                                <div style={{paddingLeft: 10, paddingTop: 10}}>
+                                    <Typography variant='title' gutterBottom={true}>
+                                        Hello,
+                                    </Typography>
+                                    {
+                                        greeting.map((item) => {
+                                                return (
+                                                    <Typography key={item} variant='body1' gutterBottom={true}>
+                                                        {item}
+                                                    </Typography>
+                                                )
+                                            }
+                                        )
+                                    }
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </Paper>
-                <Paper style={{padding: 20}}>
-                    <Typography variant='title' gutterBottom={true}>
-                        Why hire me?
-                    </Typography>
-                    {
-                        hireMe.map((item) => {
-                                return (
-                                    <Typography key={item} variant='body1' gutterBottom={true}>
-                                        {item}
-                                    </Typography>
-                                )
-                            }
-                        )
-                    }
-                </Paper>
-            </div>
-        )
+                    </Paper>
+                    <Paper style={{padding: 20}}>
+                        <Typography variant='title' gutterBottom={true}>
+                            Why hire me?
+                        </Typography>
+                        {
+                            hireMe.map((item) => {
+                                    return (
+                                        <Typography key={item} variant='body1' gutterBottom={true}>
+                                            {item}
+                                        </Typography>
+                                    )
+                                }
+                            )
+                        }
+                    </Paper>
+                </div>
+            )
+        }
     }
 }
 
