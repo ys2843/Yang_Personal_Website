@@ -18,26 +18,26 @@ const Education = () => {
         "Certificate of Professional Mentorship Program - 2017"
     ]
     return (
-        <div>
+        <Paper>
             <AppBarItem title="Education"/>
-            <Paper>
-                <EduItem Logo={nyuLogo} url="http://engineering.nyu.edu/" name="New York University"
-                         major="Computer Engineering" degree="M.Sci"
-                         time="Aug 2016 - Present" award="Grad School of Engineering Scholarship"
-                         optionalText="Relevant Course: Data Structure & Algorithm, Intro to Database, Programming for Big Data Analysis,
+
+            <EduItem Logo={nyuLogo} url="http://engineering.nyu.edu/" name="New York University"
+                     major="Computer Engineering" degree="M.Sci"
+                     time="Aug 2016 - Present" award="Grad School of Engineering Scholarship"
+                     optionalText="Relevant Course: Data Structure & Algorithm, Intro to Database, Programming for Big Data Analysis,
                          Machine learning, Operating System, Internet Architecutre & Protocol, Computer Architecture"
-                         otheraward={Nyu}
-                />
-                <Divider/>
-                <EduItem Logo={buptLogo} url="http://english.bupt.edu.cn/"
-                         name="Beijing University of Posts and Telecommunications"
-                         major="Electrical Engineering with Management" degree="B.A." time="Sep 2012 - Jun 2016"
-                         award="Third Prize Scholarship"
-                         optionalText="Relevant Course: Intro to Java, Human-Computer Interaction, C programming, Software Engineering"
-                         otheraward={Bupt}
-                />
-            </Paper>
-        </div>
+                     otheraward={Nyu}
+            />
+            <Divider/>
+            <EduItem Logo={buptLogo} url="http://english.bupt.edu.cn/"
+                     name="Beijing University of Posts and Telecommunications"
+                     major="Electrical Engineering with Management" degree="B.A." time="Sep 2012 - Jun 2016"
+                     award="Third Prize Scholarship"
+                     optionalText="Relevant Course: Intro to Java, Human-Computer Interaction, C programming, Software Engineering"
+                     otheraward={Bupt}
+            />
+        </Paper>
+
     );
 }
 

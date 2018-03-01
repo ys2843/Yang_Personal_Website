@@ -31,15 +31,13 @@ const Skills = () => {
         "Java", "PHP", "C", "Pig Latin", "R", "Spark", "Docker", "Hadoop", "Amazon AWS S3", "Data Analysis", "UX/UI Design"
     ]
     return (
-        <div>
+        <Paper>
             <AppBarItem title="Skills"/>
-            <Paper>
-                <SkillGroupSet img={frontendImg} title="Front-End" skillGroups={skillGroups[0]}/>
-                <SkillGroupSet img={backendImg} title={"Back-End"} skillGroups={skillGroups[1]}/>
-                <SkillGroupSet img={other} title={"Other"} skillGroups={skillGroups[2]}/>
-                <SkillGroupSet img={plImg} title={"Experienced"} expskills={expSkills}/>
-            </Paper>
-        </div>
+            <SkillGroupSet img={frontendImg} title="Front-End" skillGroups={skillGroups[0]}/>
+            <SkillGroupSet img={backendImg} title={"Back-End"} skillGroups={skillGroups[1]}/>
+            <SkillGroupSet img={other} title={"Other"} skillGroups={skillGroups[2]}/>
+            <SkillGroupSet img={plImg} title={"Experienced"} expskills={expSkills}/>
+        </Paper>
     );
 }
 

@@ -13,22 +13,22 @@ const ExpItems = ({logo, topic, time, title, position, location, detail, tech, p
             <div className='ItemPaperMobile'>
                 <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}>
                     <img src={logo} alt="logo" style={{width: '100%'}}/>
-                    <Typography variant="caption" color='primary'>
+                    <Typography variant="caption" color='primary' gutterBottom={true}>
                         {time}
                     </Typography>
                 </div>
-                <div style={{width: '100%', paddingLeft: 10}}>
+                <div style={{width: '100%'}}>
                     <Typography variant="subheading" color="primary" gutterBottom={true}>
                         {topic} - {location}
                     </Typography>
                     {
-                        projectUrl ? <Tooltip title="View on Github" placement="left">
-                                <a href={projectUrl} target="_blank" style={{textDecoration: 'none'}}>
-                                    <Typography variant="body2">
-                                        Main Project: {title}
-                                    </Typography>
-                                </a>
-                            </Tooltip> :
+                        projectUrl ?
+                            <a href={projectUrl} target="_blank" style={{textDecoration: 'none'}}>
+                                <Typography variant="body2" gutterBottom={true}>
+                                    Main Project: {title}
+                                </Typography>
+                            </a>
+                            :
                             <Typography variant="body1" gutterBottom={true}>
                                 Main Project: {title}
                             </Typography>

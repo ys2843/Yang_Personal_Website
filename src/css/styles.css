@@ -6,7 +6,7 @@
 
 .ItemPaperMobile {
     padding: 20px 10px 20px 10px;
-    margin-bottom: 10px;
+    margin-top: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -26,4 +26,5 @@
 .EduOptionaTextContainer {
     padding: 5px 10px 5px 10px;
     border: 3px groove ghostwhite;
+    margin-bottom: 10px;
 }

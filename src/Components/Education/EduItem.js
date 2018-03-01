@@ -23,7 +23,7 @@ const EduItem = ({Logo, url, name, major, degree, time, award, optionalText, oth
                         {name}
                     </Typography>
                     <Typography variant="body1" color="inherit" gutterBottom={true}>
-                        {degree} in {major} ,{time}
+                        {degree} in {major}, {time}
                     </Typography>
                     <div className='EduOptionaTextContainer'>
                         <Typography variant="caption" color="inherit">
@@ -69,7 +69,7 @@ const EduItem = ({Logo, url, name, major, degree, time, award, optionalText, oth
                         {name}
                     </Typography>
                     <Typography variant="body1" color="inherit" gutterBottom={true}>
-                        {degree} in {major} ,{time}
+                        {degree} in {major}, {time}
                     </Typography>
                     <div className='EduOptionaTextContainer'>
                         <Typography variant="caption" color="inherit">
