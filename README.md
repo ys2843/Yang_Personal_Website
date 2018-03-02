@@ -2,7 +2,7 @@
 
 This is my personal website implemened as a single page app in React and React-Router. It is mainly used for showing more about myself in professional experiences and skills set. 
 
-To view the website, go to [ys2843.com](ys2843.com). 
+To view the website, go to [http://ys2843.com](ys2843.com). 
 
 ## Getting Started
 
