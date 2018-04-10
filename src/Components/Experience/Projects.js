@@ -8,21 +8,24 @@ import AppBarItem from '../AppBarItem';
 const Projects = () => {
     const Detail = [
         [
-            "Developed a website for searching weather the ingredients in a skincare product is safe for pregnancy women to use",
-            "Developed a web crawler based on Python Scrapy library to fetch all the information of skincare products on ‘Sephora’ website, and use a pipeline to filter harmful ingredients, then store the items into MongoDB",
-            "Implemented RESTful API using Python Flask framework and front end using React, React-router and Redux"
+            "A dynamic Web project using AJAX, React, Node.js and MongoDB. URL: cosmeticsforpregnancy.com",
+            "Developed a Single Page App in React for query harmful ingredients in cosmetic product, through combining React- Router and Redux, implemented routing and state management at client side",
+            "Created back-end RESTful API using Node.js Express framework and deployed on Amazon EC2 CentOS, using Nginx\n" +
+            "as reverse proxy and PM2 to manage process",
         ],
         [
-            "Implemented Linear Regression, Support Vector Machine and Neural Network algorithms to conduct a comparative study",
-            "Applied model selection methods including LASSO Regularization to analyze relative importance of different factors"
+            "Contributed to dataset processing using Pandas, and apply model selection methods including LASSO regularization, to filter high correlation factors",
+            "Responsible for implementing variety of algorithms to calculate prediction models, including linear regression, neural\n" +
+            "network and support vector machine"
         ],
         [
-            "Developed a selfie camera application for laptop in Python, with speech recognition that users can interact with by speaking, which involves both real time processing of audio and video. ",
-            "Contributed to implement speech recognition by using Pyaudio for audio IO and CMU Sphinx API for speech recognition, and video rendering by using Opencv2 for video IO and filtering"
+            "Designed and implemented speech recognition module through PyAudio and PocketSphinx library, applied multi- thread to run with Tkinter UI at the same time",
+            "Contributed to implement video processing function like zoom, blur and brightness control through OpenCv2, and\n" +
+            "enable filters loaded from Photoshop ACV file by Numpy"
         ],
         [
-            "Developed a crowdfunding website project with one partner. The project contains a database based on Mysql and a website",
-            "Contributed to build the front-end web page in Jade using Bootstrap including project searching page, project profile page etc. Implemented the back-end server using Node JS Express framework. Functions include session, communicating with database, login authentication, search function etc"
+            "Responsible for designing database model according to paradigm, creating database and inserting test samples",
+            "Contributed to front-end development including searching page, project page using Bootstrap and Jade, and back-end functions implementation including user login, project search and session, through Node.js Express framework"
         ],
         [
             "Researched different aspects of contemporary songs on Million Songs Datasets, Yahoo Songs Rating datasets and Google trends based on Hadoop, Pig Latin spark and R",
@@ -33,33 +36,43 @@ const Projects = () => {
             "Built functions according to user requirements, with study guides that could contain different file formats such as PPT, video,\n" +
             "audio, and with self-log, quiz and progress check functions etc",
             "Contributed to the design of simple user interfaces for creating and reading study guides"
+        ],
+        [
+            "Designed URL and data extraction rules based on XPath and Regex, classify each product by analyzing ingredients in Pipelines and store in MongoDB",
+            "Solved Javascript dynamic lazy-load problem, by adding Selenium Web driver as middleware, runing script in headless\n" +
+            "Chrome to trigger Ajax request"
         ]
     ]
     const tech1 = [
-        ["React", "Redux", "MongoDB", "Flask", "Web Crawler", "Scrapy"],
+        ["React", "Redux", "MongoDB", "Node.js"],
         ["Python", "Neural Network", "Support Vector Machine", "Model Selection", "Jupyter"],
         ["Pocketsphinx", "Tkinter", "Numpy", "Real Time Processing", "Opencv"],
         ["Node.js", "Bootstrap", "Mysql", "Express"],
         ["Pig Latin", "R"],
-        ["Java", "Java Media Framework", "UI"]
+        ["Java", "Java Media Framework", "UI"],
+        ["Python", " Web Crawler", "Scrapy"]
     ]
     return (
         <div>
             {
                 window.innerWidth <= 500 ? <AppBarItem title="Internship & Projects"/> : <AppBarItem title="Projects"/>
             }
-            <Item logo={nyuLogo} time="Dec 2017 - Present" topic="Web Developer" location="NYU"
+            <Item logo={nyuLogo} time="Feb 2018 - Apr 2018" topic="Web Developer" location="NYU"
                   projectUrl="https://github.com/ys2843/SkincareWebProject"
-                  title="Skincare Ingredients Search Website based on Web Crawler" detail={Detail[0]} tech={tech1[0]}/>
+                  title="Skincare Ingredients Search Website" detail={Detail[0]} tech={tech1[0]}/>
+            <Item logo={nyuLogo} time="Dec 2017 - Feb 2018" topic="Web Crawler Developer" location="NYU"
+                  projectUrl="https://github.com/ys2843/sephoraCrawler"
+                  title="A web crawler based on Python Scrapy librarye" detail={Detail[6]} tech={tech1[6]}/>
+            <Item logo={nyuLogo} time="Oct 2017 - November 2017" topic="Python Developer" location="NYU"
+                  projectUrl="https://github.com/ys2843/Selfie-Camera-with-Speech-Recognition"
+                  title="Selfie Camera for Laptop with Speech Recognition" detail={Detail[2]} tech={tech1[2]}/>
             <Item logo={nyuLogo} time="Sep 2017 - November 2017" topic="Machine Learning Research" location="NYU"
                   projectUrl="https://github.com/godwinxunwang/el9123-project"
                   title="Prediction of Crime Occurrence Based on Local Demographic and Economic Data"
                   detail={Detail[1]} tech={tech1[1]}/>
-            <Item logo={nyuLogo} time="Oct 2017 - November 2017" topic="Python Developer" location="NYU"
-                  projectUrl="https://github.com/ys2843/Selfie-Camera-with-Speech-Recognition"
-                  title="Selfie Camera for Laptop with Speech Recognition" detail={Detail[2]} tech={tech1[2]}/>
             <Item logo={nyuLogo} time="Apr 2017 - May 2017" topic="Web Developer" location="NYU"
-                  title="Crowdfunding Website " detail={Detail[3]} tech={tech1[3]}
+                  title="A crowed funding website implemented in Node.js, Mysql and Bootstrap" detail={Detail[3]}
+                  tech={tech1[3]}
                   projectUrl="https://github.com/ooobread/NYU-Code"/>
             <Item logo={nyuLogo} time="Feb 2017 - May 2017" topic="Big Data Analysis" location="NYU"
                   projectUrl="https://github.com/ys2843/NYU_Million_Song_Dataset_Analysis"

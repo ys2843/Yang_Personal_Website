@@ -6,8 +6,8 @@ import AppBarItem from '../AppBarItem'
 import huaweiLogo from '../../img/huaweiLogo.png';
 
 const sDetail = [
-    "Worked with UI designer to develop front end Views in React Native",
-    "Contributed to plot investment charts using Victory library, user authentication using Asyncstorage and JWT (Jason Web Token)"
+    "Participated in mobile app front-end development and data visualization using React Native, through working with UI designer, create corresponding view component",
+    "Contributed to implement user authorization and authentication, through JWT(Javascript Web Token) and OAuth"
 ]
 
 const hDetail = [

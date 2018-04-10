@@ -8,7 +8,7 @@ To view the website, go to [ys2843.com](http://ys2843.com).
 
 To run this project locally, 
 
-+ First go to the directory in terminal and enter `npm install`.
++ Go to the directory in terminal and enter `npm install`.
 + Then enter `npm start`. You could visit the site on **localhost:3000** in browser.
 
 ### Deloyment
